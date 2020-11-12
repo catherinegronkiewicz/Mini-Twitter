@@ -12,6 +12,6 @@ package miniTwitter;
 
 public interface Observer {
 
-	public void update(String userTweet);
+    public void update(String userTweet);
 	
 }
