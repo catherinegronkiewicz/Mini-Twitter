@@ -158,6 +158,7 @@ public class UserUI extends JFrame {
 	    positiveTweets.countPositiveTweets(userTweet);
 							
 	}
+	    
     }	
 	
     // follows users (with edge cases)
@@ -184,6 +185,7 @@ public class UserUI extends JFrame {
 		followingListModel.addElement(userToFollow);
 	    }
 	}
+	    
     }
 	
 }
