@@ -79,6 +79,7 @@ public class AdminPanel extends JFrame implements Visitable {
 	groupTextBox.setBounds(185, 40, 220, 20);
 	groupTextBox.setBorder(BorderFactory.createLineBorder(Color.darkGray, 1));
 	controlPanel.add(groupTextBox);
+	    
     }
 	
     // generates buttons for panel
@@ -125,6 +126,7 @@ public class AdminPanel extends JFrame implements Visitable {
         posPercentButton.setBounds(415, 280, 220, 20);
         posPercentButton.addActionListener(new TotalPosTweetsButton());
         controlPanel.add(posPercentButton);
+	    
     }
 	
     // initializes all GUI components
@@ -146,6 +148,7 @@ public class AdminPanel extends JFrame implements Visitable {
 		
 	//method generates all buttons of control panel
 	generateButtons();
+	    
     }
 	
     // builds tree of users and groups
@@ -209,6 +212,7 @@ public class AdminPanel extends JFrame implements Visitable {
 		    ((DefaultTreeModel) treeModel).reload();
 	        }
 	    }
+	    
 	}
 
 	// adds group to Root or other Group
@@ -252,6 +256,7 @@ public class AdminPanel extends JFrame implements Visitable {
 		    ((DefaultTreeModel) treeModel).reload();
 		}	
 	    }
+		
 	}
 		
 	// displays UserUI button for user
@@ -275,6 +280,7 @@ public class AdminPanel extends JFrame implements Visitable {
 		    userUI.setVisible(true);
 		}
 	    }
+		
 	}
 	
 	// displays total number of users
@@ -287,6 +293,7 @@ public class AdminPanel extends JFrame implements Visitable {
 		JOptionPane.showMessageDialog(null, "Total Number of Users: " + userTotal.getUserTotal());
 			
 	    }
+		
 	}
 	
 	// displays total number of groups
@@ -299,6 +306,7 @@ public class AdminPanel extends JFrame implements Visitable {
 		JOptionPane.showMessageDialog(null, "Total Number of Groups: " + groupTotal.getGroupTotal());
 		
 	    }
+		
 	}
 	
 	// displays total number of tweets
@@ -311,6 +319,7 @@ public class AdminPanel extends JFrame implements Visitable {
 		JOptionPane.showMessageDialog(null, "Total Number of Tweets: " + tweetTotal.getTotalTweets());
 		
 	    }
+		
 	}
 
 	// displays the positive percentage of tweets
@@ -326,9 +335,11 @@ public class AdminPanel extends JFrame implements Visitable {
 		JOptionPane.showMessageDialog(null, "Percent Positive Tweets: " + twoDec + "%");
 	
 	    }
+		
 	}
 
 	@Override
 	public void accept(Visitor visit) {
 	}
+	
 }
