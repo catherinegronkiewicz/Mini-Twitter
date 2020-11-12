@@ -119,6 +119,7 @@ public class UserUI extends JFrame {
 	for (int i = 0; i < followingsList; i++) {
 	    followingListModel.addElement(listOfFollowings.get(i));
 	}
+	    
     }
 	
     public void scrollRefresh() {
