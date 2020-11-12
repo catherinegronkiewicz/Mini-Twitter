@@ -11,7 +11,7 @@ package miniTwitter;
 
 public interface UserElement {
 	
-	// returns current user's ID
-	public String getUserID();
+    // returns current user's ID
+    public String getUserID();
 	
 }
