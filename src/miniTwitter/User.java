@@ -81,4 +81,5 @@ public class User implements UserElement, Observer, Subject {
 	    userMap.get(twitterFollower).update(userTweet);
 	}
     }
+	
 }
