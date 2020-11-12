@@ -6,7 +6,8 @@ package miniTwitter;
  * CS 3560, Section 01
  * 12 November 2020
  * 
- * Base component of Composite pattern
+ * Base component of Composite pattern;
+ * implemented by User and Group classes
  */
 
 public interface UserElement {
