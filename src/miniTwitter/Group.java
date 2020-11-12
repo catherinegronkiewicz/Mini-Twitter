@@ -14,7 +14,7 @@ import java.util.List;
 public class Group implements UserElement {
 	
     // list of UserElement type entries
-    private List<UserElement> entries;
+    private List<UserElement> userEntries;
     private String groupID;
 	
     public Group(String groupName) {
@@ -22,7 +22,7 @@ public class Group implements UserElement {
     }
 	
     public List<UserElement> getUserEntries() {
-	return entries;
+	return userEntries;
     }
 	
     @Override
