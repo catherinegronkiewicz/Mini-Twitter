@@ -142,7 +142,7 @@ public class UserUI extends JFrame {
         @Override
 	public void actionPerformed(ActionEvent e) {	
 			
-	    userTweet = "-   " + currentUser.getUserID() + ": " + postTweetField.getText();
+	    userTweet = "-  " + currentUser.getUserID() + ": " + postTweetField.getText();
 				
 	    // current user's tweets are updated to followers
 	    currentUser.notifyObservers(userTweet);
