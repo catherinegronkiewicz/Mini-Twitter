@@ -13,32 +13,28 @@ package miniTwitter;
 
 public class DisplayVisitor implements Visitor {
 	
-	@Override
-	public void visit(TotalUserVisitor utv) {
-		System.out.println("Visiting TotalUserVisitor class!");
-		utv.getUserTotal();
+    @Override
+    public void visit(TotalUserVisitor utv) {
+	utv.getUserTotal();
 		
-	}
+    }
 
-	@Override
-	public void visit(GroupTotalVisitor gtv) {
-		System.out.println("Visiting GroupTotalVisitor class!");
-		gtv.getGroupTotal();	
+    @Override
+    public void visit(GroupTotalVisitor gtv) {
+	gtv.getGroupTotal();	
 			
-	}
+    }
 
-	@Override
-	public void visit(TotalTweetsVisitor ttv) {
-		System.out.println("Visiting TotalTweetsVisitor class!");
-		ttv.getTotalTweets();
+    @Override
+    public void visit(TotalTweetsVisitor ttv) {
+	ttv.getTotalTweets();
 				
-	}
+    }
 
-	@Override
-	public void visit(PositivePercentVisitor ppv) {
-		System.out.println("Visiting PositivePercentVisitor class!");
-		ppv.getPosTotal();
+    @Override
+    public void visit(PositivePercentVisitor ppv) {
+	ppv.getPosTotal();
 		
-	}
+    }
 
 }
