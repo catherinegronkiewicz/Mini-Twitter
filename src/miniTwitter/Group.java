@@ -13,16 +13,16 @@ import java.util.List;
 
 public class Group implements UserElement {
 	
-	// list of UserElement entries
-	private List<UserElement> entries;
-	private String groupID;
+    // list of UserElement entries
+    private List<UserElement> entries;
+    private String groupID;
 	
-	public Group(String groupName) {
-		groupID = groupName;
-	}
+    public Group(String groupName) {
+	groupID = groupName;
+    }
 	
-	@Override
-	public String getUserID() {
-		return groupID;
-	}
+    @Override
+    public String getUserID() {
+	return groupID;
+    }
 }
