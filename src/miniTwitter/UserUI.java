@@ -184,6 +184,7 @@ public class UserUI extends JFrame {
 		JOptionPane.showMessageDialog(null, "You are now following " + userToFollow + "!");
 		followingListModel.addElement(userToFollow);
 	    }
+		
 	}
 	    
     }
