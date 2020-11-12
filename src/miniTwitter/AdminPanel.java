@@ -164,6 +164,7 @@ public class AdminPanel extends JFrame implements Visitable {
         treeScrollPane.setBounds(10, 6, 165, 295);
         treeScrollPane.setBorder(BorderFactory.createLineBorder(Color.darkGray, 1));
         controlPanel.add(treeScrollPane);
+	    
     }
 	
     // returns the mapOfUsers
