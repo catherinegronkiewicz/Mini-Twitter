@@ -12,9 +12,9 @@ package miniTwitter;
 
 public interface Visitor {
 	
-	public void visit (TotalUserVisitor utv);
-	public void visit (GroupTotalVisitor gtv);
-	public void visit (TotalTweetsVisitor ttv);
-	public void visit (PositivePercentVisitor ppv);
+    public void visit (TotalUserVisitor utv);
+    public void visit (GroupTotalVisitor gtv);
+    public void visit (TotalTweetsVisitor ttv);
+    public void visit (PositivePercentVisitor ppv);
 	
 }
