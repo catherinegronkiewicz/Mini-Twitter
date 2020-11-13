@@ -57,7 +57,7 @@ public class UserUI extends JFrame {
 	setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	setBounds(200, 200, 440, 480);
 
-	setTitle("Welcome to @" + currentUser.getUserID() + "'s Twitter!");
+	setTitle("Welcome to @" + currentUser.getUserID() + "'s Mini-Twitter!");
 	contentPane = new JPanel();
 	contentPane.setBorder(BorderFactory.createLineBorder(Color.darkGray, 1));
 	setContentPane(contentPane);
