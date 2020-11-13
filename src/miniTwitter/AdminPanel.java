@@ -333,7 +333,7 @@ public class AdminPanel extends JFrame implements Visitable {
 		double percentOfTweets = posTotal.getPosPercent();
 		// round to two decimal places
 		String twoDec = String.format("%.2f", percentOfTweets);
-		JOptionPane.showMessageDialog(null, "Percent Positive Tweets: " + twoDec + "%");
+		JOptionPane.showMessageDialog(null, "Positive Tweets Percentage: " + twoDec + "%");
 	
 	    }
 		
