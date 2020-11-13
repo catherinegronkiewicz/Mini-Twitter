@@ -147,7 +147,7 @@ public class UserUI extends JFrame {
 	    // current user's tweets are updated to followers
 	    currentUser.notifyObservers(userTweet);
 	    currentUser.update(userTweet);
-	    userFeedListModel.addElement(userTweet);;
+	    userFeedListModel.addElement(userTweet);
 				
 	    // visits TotalTweetsVisitor class 
 	    TotalTweetsVisitor tweetTotal = new TotalTweetsVisitor();
