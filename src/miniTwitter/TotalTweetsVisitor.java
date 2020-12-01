@@ -4,7 +4,7 @@ package miniTwitter;
  * Catherine Gronkiewicz
  * Professor Sun
  * CS 3560, Section 01
- * 12 November 2020
+ * 9 December 2020
  * 
  * This class is visited each time
  * a tweet total is incremented - Visitor pattern
@@ -12,20 +12,20 @@ package miniTwitter;
 
 public class TotalTweetsVisitor implements Visitable {
 	
-    private static int tweetTotal;
+	private static int tweetTotal;
 	
-    public TotalTweetsVisitor() {}
+	public TotalTweetsVisitor() {}
 	
-    // returns total number of tweets
-    public int getTotalTweets() {
-	return tweetTotal;
-    }
+	// returns total number of tweets
+	public int getTotalTweets() {
+		return tweetTotal;
+	}
 
-    // accepts a TotalTweetsVisitor visitor
-    @Override
-    public void accept(Visitor visit) {
-	tweetTotal++;
-	visit.visit(this);	
-    }
+	// accepts a TotalTweetsVisitor visitor
+	@Override
+	public void accept(Visitor visit) {
+		tweetTotal++;
+		visit.visit(this);	
+	}
 	
 }

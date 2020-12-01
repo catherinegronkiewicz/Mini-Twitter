@@ -4,7 +4,7 @@ package miniTwitter;
  * Catherine Gronkiewicz
  * Professor Sun
  * CS 3560, Section 01
- * 12 November 2020
+ * 9 December 2020
  * 
  * Creates single instance of AdminPanel -
  * Singleton pattern
