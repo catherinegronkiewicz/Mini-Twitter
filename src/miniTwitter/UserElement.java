@@ -11,10 +11,10 @@ package miniTwitter;
 
 public interface UserElement {
 	
-	// returns current user's ID
-	public String getUserID();
-	// get the creation time of user or group
-	public Long getCreationTime();
-	public void setCreationTime(Long updateTime);
+    // returns current user's ID
+    public String getUserID();
+    // get the creation time of user or group
+    public Long getCreationTime();
+    public void setCreationTime(Long updateTime);
 	
 }
