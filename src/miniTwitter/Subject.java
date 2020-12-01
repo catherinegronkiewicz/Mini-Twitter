@@ -11,9 +11,9 @@ package miniTwitter;
 
 public interface Subject {
 	
-	// method that adds new user to following list
-	public void attach(String userName);
-	// method to notify users of new tweets 
+    // method that adds new user to following list
+    public void attach(String userName);
+    // method to notify users of new tweets 
     public void notifyObservers(String userTweet);
 
 }
