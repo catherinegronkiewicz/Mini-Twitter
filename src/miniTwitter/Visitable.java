@@ -12,6 +12,6 @@ package miniTwitter;
 
 public interface Visitable {
 	
-	public void accept(Visitor visit);
+    public void accept(Visitor visit);
 	
 }
