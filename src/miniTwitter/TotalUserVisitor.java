@@ -25,8 +25,7 @@ public class TotalUserVisitor implements Visitable {
     @Override
     public void accept(Visitor visit) {
 	userTotal++;
-	visit.visit(this);
-		
+	visit.visit(this);		
     }
 
 }
