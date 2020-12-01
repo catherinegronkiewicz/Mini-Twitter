@@ -12,20 +12,20 @@ package miniTwitter;
 
 public class GroupTotalVisitor implements Visitable {
 	
-	private static int groupTotal;
+    private static int groupTotal;
 	
-	public GroupTotalVisitor() {}
+    public GroupTotalVisitor() {}
 	
-	// returns total number of groups
-	public int getGroupTotal() {
-		return groupTotal;
-	}
+    // returns total number of groups
+    public int getGroupTotal() {
+	return groupTotal;
+    }
 	
-	// accepts a GroupTotalVisitor visitor
-	@Override
-	public void accept(Visitor visit) {
-		groupTotal++;
-		visit.visit(this);
-	}
+    // accepts a GroupTotalVisitor visitor
+    @Override
+    public void accept(Visitor visit) {
+	groupTotal++;
+	visit.visit(this);
+    }
 
 }
