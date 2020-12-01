@@ -12,7 +12,7 @@ package miniTwitter;
 
 public interface Observer {
 
-	// takes in arguments of tweet and time tweet was posted
-	public void update(String tweet, Long tweetTime);
+    // takes in arguments of tweet and time tweet was posted
+    public void update(String tweet, Long tweetTime);
 	
 }
