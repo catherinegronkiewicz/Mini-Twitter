@@ -15,11 +15,10 @@ public class PositivePercentVisitor implements Visitable {
     // getting total tweets from TotalTweetsVisitor class
     private TotalTweetsVisitor ttv = new TotalTweetsVisitor();
 
-    public double totalTweets;
-    public static int posTotal;
-    public double positiveTweets;
+    double totalTweets, positiveTweets;
     double posPercent = 0.0;
-	
+    public static int posTotal;
+    	
     // positive words/tweets
     String[] positiveWords = {"woohoo", "congrats", "awesome", "cool", "nice", "love", "excited"};
 	
