@@ -12,21 +12,21 @@ package miniTwitter;
 
 public class TotalUserVisitor implements Visitable {
 	
-	private static int userTotal;
+    private static int userTotal;
 	
-	public TotalUserVisitor() {}
+    public TotalUserVisitor() {}
 	
-	// returns total number of users
-	public int getUserTotal() {
-		return userTotal;
-	}
+    // returns total number of users
+    public int getUserTotal() {
+	return userTotal;
+    }
 
-	// accepts a TotalUserVisitor visitor
-	@Override
-	public void accept(Visitor visit) {
-		userTotal++;
-		visit.visit(this);
+    // accepts a TotalUserVisitor visitor
+    @Override
+    public void accept(Visitor visit) {
+	userTotal++;
+	visit.visit(this);
 		
-	}
+    }
 
 }
