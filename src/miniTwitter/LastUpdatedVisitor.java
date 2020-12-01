@@ -12,21 +12,21 @@ package miniTwitter;
 
 public class LastUpdatedVisitor implements Visitable {
 	
-	private String userID;
+    private String userID;
 	
-	public LastUpdatedVisitor(String userName) {
-		userID = userName;
-	}
+    public LastUpdatedVisitor(String userName) {
+	userID = userName;
+    }
 
-	// get ID of latest updated user
-	public String getUserID() {
-		return userID;
-	}
+    // get ID of latest updated user
+    public String getUserID() {
+	return userID;
+    }
 
-	// accepts a LastUpdatedVisitor visitor
-	@Override
-	public void accept(Visitor visit) {
-		visit.visit(this);
-	}
+    // accepts a LastUpdatedVisitor visitor
+    @Override
+    public void accept(Visitor visit) {
+	visit.visit(this);
+    }
 
 }
