@@ -122,7 +122,7 @@ public class UserUI extends JFrame {
 		
 	// add the user tweets to the userfeed
 	int userTweets = userFeed.size();
-	for (int i = 0; i < userTweets; i++){
+	for (int i = 0; i < userTweets; i++) {
 	    userFeedListModel.addElement(userFeed.get(i));
 	}
 		
