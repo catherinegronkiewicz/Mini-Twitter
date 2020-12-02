@@ -145,6 +145,7 @@ public class UserUI extends JFrame {
 	newsfeedScrollPane.setBounds(10, 290, 415, 150);
 	newsfeedScrollPane.setBorder(BorderFactory.createLineBorder(Color.darkGray, 1));
 	contentPane.add(newsfeedScrollPane);
+	    
     }
 	
     // posts tweets (to user's feed and their followers' feeds)
