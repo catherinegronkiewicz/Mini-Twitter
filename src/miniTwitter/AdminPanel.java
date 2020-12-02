@@ -395,6 +395,7 @@ public class AdminPanel extends JFrame implements Visitable {
 	    JOptionPane.showMessageDialog(null, "Total Number of Users: " + userTotal.getUserTotal());
 			
 	}
+	    
     }
 	
     // displays total number of groups
