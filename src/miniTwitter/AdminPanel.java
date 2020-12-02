@@ -317,10 +317,11 @@ public class AdminPanel extends JFrame implements Visitable {
 		Entry<String, User> userElement = iterator.next();
 		String userKey = (String)userElement.getKey(); 
 	            
-		    // checks conditions if IDs are duplicates or contain spaces
-	            if(mapOfGroup.containsKey(userKey) || userKey.contains(" ")) {
-	            	allValid = false;
-	            }    
+		// checks conditions if IDs are duplicates or contain spaces
+	        if(mapOfGroup.containsKey(userKey) || userKey.contains(" ")) {
+	            allValid = false;
+	        } 
+		    
 	    }
 			
 	    if (mapOfGroup.isEmpty() == true && mapOfUsers.isEmpty() == true) {
