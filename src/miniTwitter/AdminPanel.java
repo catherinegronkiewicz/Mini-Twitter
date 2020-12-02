@@ -85,6 +85,7 @@ public class AdminPanel extends JFrame implements Visitable {
 	groupTextBox.setBounds(185, 40, 220, 20);
 	groupTextBox.setBorder(BorderFactory.createLineBorder(Color.darkGray, 1));
 	controlPanel.add(groupTextBox);
+	    
     }
 	
     // generates buttons for panel
@@ -165,6 +166,7 @@ public class AdminPanel extends JFrame implements Visitable {
 		
 	//method generates all buttons of control panel
 	generateButtons();
+	    
     }
 	
     // builds tree of users and groups
@@ -180,6 +182,7 @@ public class AdminPanel extends JFrame implements Visitable {
         treeScrollPane.setBounds(10, 6, 165, 295);
         treeScrollPane.setBorder(BorderFactory.createLineBorder(Color.darkGray, 1));
         controlPanel.add(treeScrollPane);
+	    
     }
 	
     // returns the mapOfUsers
@@ -231,8 +234,11 @@ public class AdminPanel extends JFrame implements Visitable {
 		}	
 		JOptionPane.showMessageDialog(null, userID + " has been added!");
 		((DefaultTreeModel) treeModel).reload();
+		    
 	    }
+		
 	}
+	    
     }
 
     // adds group to Root or other Group
@@ -280,8 +286,11 @@ public class AdminPanel extends JFrame implements Visitable {
 		} 
 		JOptionPane.showMessageDialog(null, groupID + " has been added!");
 		((DefaultTreeModel) treeModel).reload();
-	    }	
+		    
+	    }
+		
 	}
+	    
     }
 	
     // validates the user IDs and group IDs
@@ -311,7 +320,7 @@ public class AdminPanel extends JFrame implements Visitable {
 		    // checks conditions if IDs are duplicates or contain spaces
 	            if(mapOfGroup.containsKey(userKey) || userKey.contains(" ")) {
 	            	allValid = false;
-	            }
+	            }    
 	    }
 			
 	    if (mapOfGroup.isEmpty() == true && mapOfUsers.isEmpty() == true) {
@@ -324,8 +333,10 @@ public class AdminPanel extends JFrame implements Visitable {
 			
 	    else {
 		JOptionPane.showMessageDialog(null, "No, not all IDs are valid!");
-	    }     
+	    }
+		
 	}
+	    
     }
 	
     // gets the last user (most recent user) with updates
@@ -344,7 +355,9 @@ public class AdminPanel extends JFrame implements Visitable {
 	    else {
 		JOptionPane.showMessageDialog(null, "Last Updated User: " + lastUpdated);
 	    }
+		
 	}
+	    
     }
 		
     // displays UserUI button for user
@@ -366,7 +379,9 @@ public class AdminPanel extends JFrame implements Visitable {
 		UserUI userUI = new UserUI(user);
 		userUI.setVisible(true);
             }
+		
 	}
+	    
     }
 	
     // displays total number of users
@@ -391,6 +406,7 @@ public class AdminPanel extends JFrame implements Visitable {
 	    JOptionPane.showMessageDialog(null, "Total Number of Groups: " + groupTotal.getGroupTotal());
 		
 	}
+	    
     }
 	
     // displays total number of tweets
@@ -403,6 +419,7 @@ public class AdminPanel extends JFrame implements Visitable {
 	    JOptionPane.showMessageDialog(null, "Total Number of Tweets: " + tweetTotal.getTotalTweets());
 		
 	}
+	    
     }
 
     // displays the positive percentage of tweets
@@ -418,6 +435,7 @@ public class AdminPanel extends JFrame implements Visitable {
 	    JOptionPane.showMessageDialog(null, "Percent Positive Tweets: " + twoDec + "%");
 	
 	}
+	    
     }
 
     @Override
