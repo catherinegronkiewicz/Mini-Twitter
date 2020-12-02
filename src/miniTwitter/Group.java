@@ -31,16 +31,14 @@ public class Group implements UserElement {
     	return groupID;
     }
 
-	@Override
-	public void setCreationTime(Long updateTime) {
-		creationTime = updateTime;
-		
-	}
+    @Override
+    public void setCreationTime(Long updateTime) {
+	creationTime = updateTime;	
+    }
 
-	@Override
-	public Long getCreationTime() {
-		return creationTime;
-
-	}
+    @Override
+    public Long getCreationTime() {
+	return creationTime;
+    }
 	
 }
