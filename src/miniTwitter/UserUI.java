@@ -128,7 +128,7 @@ public class UserUI extends JFrame {
 		
 	// add the user followings to the list
 	int followingsList = listOfFollowings.size();
-	for (int i = 0; i < followingsList; i++){
+	for (int i = 0; i < followingsList; i++) {
 	    followingListModel.addElement(listOfFollowings.get(i));
 	}
 		
