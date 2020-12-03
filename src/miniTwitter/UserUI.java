@@ -209,7 +209,7 @@ public class UserUI extends JFrame {
 	    } else if (!mapOfUsers.containsKey(userToFollow)) {
 		JOptionPane.showMessageDialog(null, "User \"" + userToFollow + "\" does not exist!");
 				
-	    } else if(currentUser.getUserFollowings().contains(userToFollow)){
+	    } else if(currentUser.getUserFollowings().contains(userToFollow)) {
 		JOptionPane.showMessageDialog(null, "You already follow the user \"" + userToFollow + "\"!");
 				
 	    } else if (userToFollow.equals(currentID)) {
